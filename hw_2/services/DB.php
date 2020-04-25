@@ -4,20 +4,10 @@ namespace app\services;
 
 class DB implements DBI, DBII
 {
-    use TestT;
-
-    public function find(string $sql)
-    {
-        return $sql . 'find';
+    public function queryOne($sql, $param = []) {
+        return [];
     }
-
-    public function findAll(string $sql)
-    {
-        return $sql . 'findAll';
-    }
-
-    public function query(string $sql)
-    {
-        // TODO: Implement query() method.
+    public function queryAll($sql, $param = []) {
+        return [];
     }
 }

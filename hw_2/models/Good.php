@@ -1,10 +1,10 @@
 <?php
 
-namespace app\model;
+namespace app\models;
 
 class Good extends Model implements DBII
 {
-    use TestT;
+
     public $id;
     public $name;
     public $description;
